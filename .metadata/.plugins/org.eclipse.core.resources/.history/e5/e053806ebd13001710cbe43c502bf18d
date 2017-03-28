@@ -1,0 +1,9 @@
+package com.Object;
+
+public class Child extends Parent{
+	public static void main(String[] args) {
+		Child child = new Child();
+		System.out.println("子类也吃东西"+ child.name);
+		child.eat();
+	}
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.Object.TestThis"/>
+<fullyQualifiedTypeName name="com.Object.Parent"/>
+<fullyQualifiedTypeName name="com.Object.TestSuper"/>
+<fullyQualifiedTypeName name="com.Object.Child"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.Object.SonInLaw"/>
+<fullyQualifiedTypeName name="com.Object.MotherInLaw"/>
+<fullyQualifiedTypeName name="com.Object.extend.User"/>
+<fullyQualifiedTypeName name="com.Object.extend.VipUser"/>
+</qualifiedTypeNameHistroy>

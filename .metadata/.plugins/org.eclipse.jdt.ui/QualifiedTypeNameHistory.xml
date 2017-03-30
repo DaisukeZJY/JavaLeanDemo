@@ -4,9 +4,16 @@
 <fullyQualifiedTypeName name="com.Object.Parent"/>
 <fullyQualifiedTypeName name="com.Object.TestSuper"/>
 <fullyQualifiedTypeName name="com.Object.Child"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.Object.SonInLaw"/>
 <fullyQualifiedTypeName name="com.Object.MotherInLaw"/>
 <fullyQualifiedTypeName name="com.Object.extend.User"/>
 <fullyQualifiedTypeName name="com.Object.extend.VipUser"/>
+<fullyQualifiedTypeName name="com.Object.chongzai.Man"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="com.Object.overload.ParentOverLoad"/>
+<fullyQualifiedTypeName name="com.Object.overload.ChildOverLoad"/>
+<fullyQualifiedTypeName name="com.Object.duotai.LenovoDriver"/>
+<fullyQualifiedTypeName name="com.Object.duotai.Driver"/>
+<fullyQualifiedTypeName name="com.Object.duotai.DellDriver"/>
+<fullyQualifiedTypeName name="com.Object.interfaces.ChildImplements"/>
 </qualifiedTypeNameHistroy>

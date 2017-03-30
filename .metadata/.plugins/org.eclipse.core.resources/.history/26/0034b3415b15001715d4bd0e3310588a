@@ -1,0 +1,5 @@
+package com.Object.abstracts;
+
+public class AbstractParent {
+
+}

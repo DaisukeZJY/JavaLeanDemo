@@ -1,0 +1,14 @@
+package com.Object.overload;
+
+public class ChildOverLoad extends ParentOverLoad{
+	// 重写父类方法
+	public void eat() {
+		System.out.println("child eat");
+	}
+	
+	public static void main(String[] args) {
+		ChildOverLoad childOverLoad = new ChildOverLoad();
+		childOverLoad.eat();
+		System.out.println("child 性："+childOverLoad.name);
+	}
+}

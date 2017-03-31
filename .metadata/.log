@@ -1542,3 +1542,11 @@ java.lang.NullPointerException
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui.views.properties.tabbed 4 4 2017-03-31 21:32:02.195
+!MESSAGE Contributor com.genuitec.eclipse.meexplorer.MENavigator cannot be created.
+
+!ENTRY org.eclipse.ui 4 0 2017-03-31 21:38:55.312
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException

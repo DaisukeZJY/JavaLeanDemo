@@ -11,26 +11,6 @@ public class TestArrayList {
 	 * 4、查询数据
 	 * */
 	
-	
-	/**
-	 * ArrayList、Vector和LinkedList的区别
-	 * 
-	 * 1、ArrayList、Vector实现的机制是数组
-	 * 	 - 插入和删除元素时效率低
-	 * 	 - 产找元素时效率高
-	 * 2、LinkedList实现机制是链表
-	 * 	 - 插入和删除元素时效率高
-	 * 	 - 查找元素时效率低
-	 * */
-	
-	/**
-	 * ArrayList、Vector的区别
-	 * ArrayList：线程不安全，效率高
-	 * Vector：线程安全，效率低
-	 * */
-	
-	
-	
 	public static void main(String[] args) {
 		// 插入数据
 		ArrayList<String> arrayList = new ArrayList<String>();

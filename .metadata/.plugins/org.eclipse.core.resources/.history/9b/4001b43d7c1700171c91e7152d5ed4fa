@@ -1,0 +1,26 @@
+package com.Object.collection;
+
+import java.util.Iterator;
+import java.util.Set;
+import java.util.TreeSet;
+
+public class TestTreeSet {
+	// 具有元素自用排序功能
+	
+	public static void main(String[] args) {
+		TreeSet<String> set = new TreeSet<String>();
+		set.add("3");
+		set.add("2");
+		set.add("3");
+		set.add("6");
+		set.add("4");
+		set.add("1");
+		
+		Iterator<String> iterator = set.iterator();
+		while (iterator.hasNext()) {
+			String string = (String) iterator.next();
+			System.out.println(string);
+		}
+		
+	}
+}

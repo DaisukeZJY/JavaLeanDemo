@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.ListIterator;
 
-public interface TestList extends Collection{
+public interface TestList extends Collection<Object>{
 	// 根据索引取得元素
 	public abstract Object get(int i);
 	

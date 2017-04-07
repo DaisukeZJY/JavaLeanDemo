@@ -1,8 +1,0 @@
-package com.Object.extend;
-
-public class User {
-	public int ensure;
-	public void addSure(int money) {
-		this.ensure  += money * 2;
-	}
-}

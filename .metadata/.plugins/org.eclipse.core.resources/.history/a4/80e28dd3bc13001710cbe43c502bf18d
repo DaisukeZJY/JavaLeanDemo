@@ -1,8 +1,0 @@
-package com.Object;
-
-public class Parent {
-	public String name = "name";
-	public void eat(){
-		System.out.println("父类吃东西");
-	}
-}

@@ -1,0 +1,5 @@
+package com.Object.Exception;
+
+public class TestCustomExeption {
+
+}

@@ -1,0 +1,45 @@
+package com.Object.Exception;
+
+public class TestException {
+	/**
+	 * 
+	 * 在Java中，每一个异常都是一个类，而所有的异常都有一个共同的父类
+	 * java.lang.Exception
+	 * */
+	
+	// 捕捉异常
+	public static void main(String[] args) {
+//		try {
+//			int i = 0;
+//			int j = 5 / i;
+//			System.out.println("程序没有抛出异常");
+//		} catch (Exception e) {
+//			// TODO: handle exception
+//			System.out.println(e.getMessage());
+//			e.printStackTrace();
+//			// java.lang.ArithmeticException: / by zero
+//		} finally {
+//			// finally 无论怎样都会执行的
+//			System.out.println("程序执行完毕");
+//		}
+		
+		// 多异常处理
+		try {
+			int i = 0;
+			int j = 5 / i;
+			System.out.println("程序没有抛出异常");
+		} catch (ArithmeticException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} catch (RuntimeException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} finally {
+			System.out.println("程序执行完毕");
+		}
+		
+	}
+}

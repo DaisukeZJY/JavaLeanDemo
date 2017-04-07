@@ -1,8 +1,0 @@
-package com.Object;
-
-public class MotherInLaw {
-	public int laLevel; // 辣的级别
-	public int introdece() {
-		return this.laLevel;
-	}
-}

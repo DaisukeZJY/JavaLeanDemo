@@ -1,0 +1,41 @@
+package com.Object.Date;
+
+import java.util.Date;
+
+public class TestDate {
+	/***/
+	
+	
+	
+	@SuppressWarnings("deprecation")
+	public static void main(String[] args) {
+		// 得到当前日期
+		Date date = new Date();
+		System.out.println(date.toString());
+		
+		// 转换当前日期到本地日期
+		System.out.println(date.toLocaleString());
+		
+		// 国际日期
+		System.out.println(date.toGMTString());
+		
+		// 得到日期与时间
+		int year = date.getYear();
+		// 月是从0开始的，所以加一
+		int month = date.getMonth() + 1;
+		int day = date.getDate();
+		
+		int hour = date.getHours();
+		int minute = date.getMinutes();
+		int second = date.getSeconds();
+		int weekday = date.getDay();
+		
+		System.out.println( year + "-" + month + "-" + day + " " + hour + ":" + minute + ":" + second + " 星期" + weekday );
+
+		// 得到毫秒数(得到1970年1月1日0点0分0秒到现在间隔的毫秒数)
+		long miniSeconds = date.getTime();
+		System.out.println(miniSeconds);
+	}
+	
+	
+}

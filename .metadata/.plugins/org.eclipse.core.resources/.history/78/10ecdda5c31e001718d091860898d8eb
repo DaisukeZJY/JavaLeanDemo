@@ -1,0 +1,43 @@
+package com.Object.File;
+
+import java.io.File;
+import java.io.IOException;
+
+public class TestFile {
+	public static void main(String[] args) throws IOException {
+		// 绑定一个文件
+		File file = new File("/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/File/TestFile.txt");
+		// 绑定一个路径
+		File dirFile = new File("/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/File");
+		
+		// =========文件操作====== //
+		// 创建新文件
+		boolean isOk = file.createNewFile();
+		System.out.println(isOk);
+		// 删除文件
+		isOk = file.delete();
+		file.deleteOnExit();
+		System.out.println(isOk);
+		// 判断文件是否存在
+		isOk = file.exists();
+		// 判断是否是文件
+		isOk = file.isFile();
+		
+		// 判断是否可读
+		boolean canRead = file.canRead();
+		// 判断是否可写
+		boolean canWrite = file.canWrite();
+		
+		// 得到文件的全路径（路径+文件名）
+		String pathString = file.getPath();
+		System.out.println("path:"+pathString);
+		// 得到文件名
+		String nameString = file.getName();
+		System.out.println("name:"+nameString);
+		// 得到文件路径
+		String parentString = file.getParent();
+		System.out.println("parent:"+parentString);
+		
+		
+	}
+}

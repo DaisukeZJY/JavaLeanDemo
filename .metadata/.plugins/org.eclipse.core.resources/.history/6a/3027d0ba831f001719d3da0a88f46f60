@@ -45,13 +45,11 @@ public class TestFile {
 			// 绑定当前目录
 			File currentFile = new File(pathNameString);
 			if (currentFile.isFile()) {
-				System.out.println(pathNameString);
+				System.out.println(fileName);
 				currentFile.delete();
-				delegleDir(path, dirName);
+				delegleDir(pathNameString, dirName);
 			} else if (currentFile.isDirectory()) {
-				if (pathNameString.contains(dirName)) {
-					currentFile.delete();
-				}
+				currentFile.delete();
 			}
 			
 		}

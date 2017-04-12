@@ -50,7 +50,13 @@
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="com.Object.JDK6.TestJDK6"/>
 <fullyQualifiedTypeName name="com.Object.JDK6.TestJDK6.Sex"/>
+<fullyQualifiedTypeName name="javax.naming.InitialContext"/>
+<fullyQualifiedTypeName name="com.Object.TestNeiBuLei.Inner"/>
+<fullyQualifiedTypeName name="com.Object.TestNeiBuLei"/>
+<fullyQualifiedTypeName name="com.Object.TestNeiBuLei.StaticInner"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.Object.File.TestFile"/>
 </qualifiedTypeNameHistroy>

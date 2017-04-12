@@ -49,9 +49,7 @@ public class TestFile {
 				currentFile.delete();
 				delegleDir(path, dirName);
 			} else if (currentFile.isDirectory()) {
-				if (pathNameString.contains(dirName)) {
-					currentFile.delete();
-				}
+				currentFile.delete();
 			}
 			
 		}

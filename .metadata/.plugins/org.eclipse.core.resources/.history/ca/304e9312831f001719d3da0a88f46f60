@@ -45,13 +45,11 @@ public class TestFile {
 			// 绑定当前目录
 			File currentFile = new File(pathNameString);
 			if (currentFile.isFile()) {
-				System.out.println(pathNameString);
+				System.out.println(fileName);
 				currentFile.delete();
-				delegleDir(path, dirName);
+				delegleDir(pathNameString, dirName);
 			} else if (currentFile.isDirectory()) {
-				if (pathNameString.contains(dirName)) {
-					currentFile.delete();
-				}
+				currentFile.delete();
 			}
 			
 		}
@@ -120,8 +118,8 @@ public class TestFile {
 		System.out.println("parent:"+parent);
 		*/
 		
-//		TestFile.scanDic("/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object");
+		TestFile.scanDic("/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object");
 		
-		TestFile.delegleDir("/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object", "/File/a");
+		
 	}
 }

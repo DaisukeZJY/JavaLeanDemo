@@ -42,7 +42,7 @@ public class TestIO {
 		// 1、处理硬盘的低端，输入流。低端流绑定硬盘的文件
 		FileInputStream fileInputStream = null;
 		try {
-			fileInputStream = new FileInputStream(path);
+			fileInputStream = new FileInputStream(path+"/IO.txt");
 			
 			// 规定读取字节数
 			byte[] buffer = new byte[1024];
@@ -74,7 +74,6 @@ public class TestIO {
 			fileOutputStream = new FileOutputStream(path);
 			// 写二进制数据
 			fileOutputStream.write(0);
-			fileOutputStream.write(1);
 			fileOutputStream.flush();
 			
 		} catch (FileNotFoundException e) {
@@ -88,15 +87,13 @@ public class TestIO {
 	
 	public static void main(String[] args) throws Exception{
 		
-		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO/IO.txt";
-		
-		// 写入文件数据
-		TestIO.writeData(path);
+		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO";
 		
 		// 读取文件数据
 		TestIO.readData(path);
 		
-		
+		// 写入文件数据
+		TestIO.writeData(path);
 		
 	}
 	

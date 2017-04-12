@@ -2,8 +2,6 @@ package com.Object.IO;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
 
 public class TestIO {
 	/**
@@ -32,17 +30,18 @@ public class TestIO {
 	 * 3、从处理的数据类型来看
 	 * - 字符流：处理文本（储存字符类型的文件）
 	 * - 字节流：处理二进制的数据（0和1的数据）
-	 * @throws IOException 
 	 * 
 	 * 
 	 * */
 	
-	public static void readData(String path) throws IOException {
+	public static void main(String[] args) throws Exception{
+		
+		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO";
 		/// 硬盘与内存交互：按字节读取数据
 		// 1、处理硬盘的低端，输入流。低端流绑定硬盘的文件
 		FileInputStream fileInputStream = null;
 		try {
-			fileInputStream = new FileInputStream(path);
+			fileInputStream = new FileInputStream(path+"/light_file_download.png");
 			
 			// 规定读取字节数
 			byte[] buffer = new byte[1024];
@@ -64,39 +63,6 @@ public class TestIO {
 			// 关闭流
 			fileInputStream.close();
 		}
-	}
-	
-	public static void writeData(String path) throws Exception{
-		// 低端绑定硬盘，输出流
-		FileOutputStream fileOutputStream = null;
-		try {
-			// 低端流绑定硬盘上的文件
-			fileOutputStream = new FileOutputStream(path);
-			// 写二进制数据
-			fileOutputStream.write(0);
-			fileOutputStream.write(1);
-			fileOutputStream.flush();
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} finally {
-			fileOutputStream.close();
-		}
-	}
-	
-	
-	public static void main(String[] args) throws Exception{
-		
-		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO/IO.txt";
-		
-		// 写入文件数据
-		TestIO.writeData(path);
-		
-		// 读取文件数据
-		TestIO.readData(path);
-		
-		
 		
 	}
 	

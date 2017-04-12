@@ -74,7 +74,6 @@ public class TestIO {
 			fileOutputStream = new FileOutputStream(path);
 			// 写二进制数据
 			fileOutputStream.write(0);
-			fileOutputStream.write(1);
 			fileOutputStream.flush();
 			
 		} catch (FileNotFoundException e) {

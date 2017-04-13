@@ -1,0 +1,36 @@
+package com.Object.IO;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+public class TestSystemIn {
+
+	public static void main(String[] args) {
+		
+		InputStreamReader inputStreamReader = null;
+		BufferedReader bufferedReader = null;
+		
+		// 接收键盘输入的数据
+		inputStreamReader = new InputStreamReader(System.in);
+		bufferedReader = new BufferedReader(inputStreamReader);
+		
+		try {
+			while (true) {
+				String systemsString = bufferedReader.readLine();
+				if ("hello".endsWith(systemsString)) {
+					System.out.println("hi");
+				} else {
+					System.out.println("you input:"+systemsString);
+				}
+				if ("quit".endsWith(systemsString)) {
+					System.out.println("welcome next use");
+					break;
+				}
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		} 
+	}
+}

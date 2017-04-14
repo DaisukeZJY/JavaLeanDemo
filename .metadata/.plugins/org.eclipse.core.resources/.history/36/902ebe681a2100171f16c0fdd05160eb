@@ -1,0 +1,7 @@
+package com.Object.IO;
+
+public class TestWriteObject {
+	public String name;
+	public int age;
+	public String address;
+}

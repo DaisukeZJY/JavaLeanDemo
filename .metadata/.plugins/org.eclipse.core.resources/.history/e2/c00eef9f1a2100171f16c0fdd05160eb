@@ -1,0 +1,32 @@
+package com.Object.IO;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestObjectOutputStream {
+	/**
+	 * 将对象用对象刘写入文件
+	 * @throws IOException 
+	 * */
+	
+	public static void main(String[] args) throws IOException {
+		List<TestWriteObject> objects = new ArrayList<TestWriteObject>();
+		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO/IOObject.txt";
+		FileOutputStream fileOutputStream;
+		try {
+			fileOutputStream = new FileOutputStream(path);
+			ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+			objectOutputStream.writeObject(objects);
+			objectOutputStream.close();
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		
+		
+	}
+}

@@ -1,0 +1,25 @@
+package com.Object.IO;
+
+import java.util.List;
+
+public class TestFileUtil {
+
+	public static void main(String[] args) {
+//		String msg = FileUtil.keyIn();
+		String path = "/Users/DaiSuke/Desktop/MyGitHubProject/JavaLeanDemo/JavaBaseDataType/src/com/Object/IO/IOObjectTest.txt";
+		
+//		FileUtil.outToFile(msg, path);
+		
+		TestWriteObject t1 = new TestWriteObject("t1", 1, "11111");
+		TestWriteObject t2 = new TestWriteObject("t2", 2, "22222");
+		FileUtil.writeObject(t1, path);
+		FileUtil.writeObject(t2, path);
+		
+		
+		List<Object> list = (List<Object>)FileUtil.readObject(path);
+		for (Object object : list) {
+			TestWriteObject testWriteObject = (TestWriteObject)object;
+			System.out.println("name:"+testWriteObject.getName()+"address:"+testWriteObject.getAddress());
+		}
+	}
+}

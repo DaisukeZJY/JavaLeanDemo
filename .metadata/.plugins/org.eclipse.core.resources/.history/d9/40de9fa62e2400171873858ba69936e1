@@ -1,0 +1,27 @@
+package com.Object.thread;
+
+public class TestThread {
+	/**
+	 * 
+	 * */
+	
+	public static void printDan() {
+		for (int i = 1; i < 100; i += 2) {
+			System.out.println(i);
+		}
+	}
+	
+	public static void printShuang() {
+		for (int i = 0; i < 100; i += 2) {
+			System.out.println(i);
+		}
+	}
+	
+	
+	public static void main(String[] args) {
+		TestThread.printShuang();
+		TestThread.printDan();
+		
+	}
+	
+}

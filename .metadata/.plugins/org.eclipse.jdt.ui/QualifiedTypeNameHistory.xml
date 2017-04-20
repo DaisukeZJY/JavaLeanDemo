@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.Object.TestObejct"/>
-<fullyQualifiedTypeName name="java.util.jar.Attributes.Name"/>
-<fullyQualifiedTypeName name="com.Object.TestStaticAndFinal"/>
-<fullyQualifiedTypeName name="java.lang.Throwable"/>
-<fullyQualifiedTypeName name="com.Onject.GC.TestGC"/>
-<fullyQualifiedTypeName name="java.util.Collections"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
-<fullyQualifiedTypeName name="java.util.ListIterator"/>
 <fullyQualifiedTypeName name="com.Object.collection.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
@@ -60,4 +52,12 @@
 <fullyQualifiedTypeName name="com.Object.IO.TestWriteObject"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestThreadShuang"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestThread"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestRunnableDan"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestRunnableShuang"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestThreadDan"/>
+<fullyQualifiedTypeName name="com.Object.thread.TestThreadDaemon"/>
 </qualifiedTypeNameHistroy>

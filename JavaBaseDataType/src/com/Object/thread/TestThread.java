@@ -31,16 +31,19 @@ public class TestThread {
 //		dan.start();
 //		shuang.start();
 		
-		TestRunnableDan runnableDan = new TestRunnableDan();
-		// 将线程绑定一个任务
-		Thread danThread = new Thread(runnableDan); 
+//		TestRunnableDan runnableDan = new TestRunnableDan();
+//		// 将线程绑定一个任务
+//		Thread danThread = new Thread(runnableDan); 
+//		
+//		TestRunnableShuang runnableShuang = new TestRunnableShuang();
+//		Thread shuangtThread = new Thread(runnableShuang);
+//		
+//		danThread.start();
+//		shuangtThread.start();
 		
-		TestRunnableShuang runnableShuang = new TestRunnableShuang();
-		Thread shuangtThread = new Thread(runnableShuang);
-		
-		danThread.start();
-		shuangtThread.start();
-		
+		// 测试父子线程间数据共享
+		TestDataShareSon son = new TestDataShareSon("daisuke");
+		son.start();
 	}
 	
 }
